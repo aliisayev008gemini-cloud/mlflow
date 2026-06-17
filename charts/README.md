@@ -160,6 +160,8 @@ ingress:
 
 Alternatively, you can use the Kubernetes Gateway API by configuring an `HTTPRoute`:
 
+> **Note:** Ensure that the Gateway API CRDs (`v1` or `v1beta1`) and a Gateway controller (e.g., Istio, Envoy Gateway) are installed on your cluster before enabling this feature.
+
 ```yaml
 gateway:
   enabled: true
